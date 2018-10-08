@@ -12149,8 +12149,8 @@ Standard deviation of prices: $165340.27765266784
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-Yes because:
- *</p>
+Yes.I'd consider this model to have successfully captured the variation of the target variable because
+The model has a high R^2 of 0.923. This means a 92.3% percentage of the target variable can be explained by the features using the model. So the model is pretty good.</p>
 
 </div>
 </div>
@@ -12310,7 +12310,24 @@ Think about the pros and cons of adding more training points based on if the tra
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-I will choose the one that has <code>max_depth = 3</code>. I think that his model is not underfitting because it has a good value of its hyperparameter so it means when we add more for training data the model will learn and score for error will decrese in addition to decreasing the testing error scroe so the learning curve will converge also together, having a small score.</p>
+I will choose the one that has <code>max_depth = 1</code>.</p>
+<p><strong>As more training points (TP) are added</strong></p>
+<ul>
+<li><p>The score of the training curve decreases.</p>
+<ul>
+<li>It decreases dramatically from 1.0 (since there are 0 TP, it predicts perfectly) at 0 TP to just under 0.6 at 50 TP.
+*The score the testing curve converges to is just under 0.5.</li>
+</ul>
+</li>
+<li><p>The score of the testing curve</p>
+<ul>
+<li>it increases dramatically from &lt;0 to just under 0.4 when the number of TP is increased from 0 to 50.
+*It then increases slightly (by less than 0.1) as the number of TP increases from 50 to 200 before plateauing or even decreasing slightly as more TP are added beyond 200 TP.</li>
+<li>The score the testing curve converges to is roughly 0.4.</li>
+</ul>
+</li>
+</ul>
+<p>It does not seem like the model will benefit from additional training points beyond 300 training points</p>
 
 </div>
 </div>
