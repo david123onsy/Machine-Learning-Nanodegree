@@ -22,8 +22,3 @@ This directory includes lecture notes (`Resources`) and all projects are in (`Pr
 	- Project 1: Predicting Boston Housing Prices
 2. Supervised Learning
 	- Project 2: Building a Student Intervention System (Predicting whether or not students will fail so schools can intervene to help them graduate)
-3. Unsupervised Learning
-	- Project 3: Creating Customer Segments (Segmenting customers based on spending in different categories)
-4. Reinforcement Learning
-	- Project 4: Train a Smartcab to Drive (Implement Q-learning algorithm)
-5. Machine Learning Specialisation of Choice
